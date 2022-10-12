@@ -1,0 +1,152 @@
+body {
+
+  font-family: arial;
+
+}
+
+.primary {
+  background-color: rgb(247, 246, 246);
+  width: 100%
+}
+
+.primary .secondary .container1 {
+
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.rdo {
+
+  text-align: center;
+}
+
+td {
+  padding: 4px 8px;
+
+}
+
+.btn {
+  margin-top: 5px;
+  padding: 5px 3px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container1 {
+
+  padding: 15px;
+  border: 1px solid rgb(103, 100, 100);
+
+}
+
+textarea {
+
+  width: 99%;
+  height: 70px;
+}
+
+.tr {
+  border-radius: 10px;
+  background-color: rgb(231, 231, 231);
+
+}
+
+table {
+
+  width: 100%
+}
+
+.table_heading {
+  padding: 0px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.star {
+  color: red;
+}
+
+
+
+label {
+  width: 165px;
+  height: 20px;
+  display: inline-block;
+}
+
+label span {
+  text-align: left;
+  display: inline;
+}
+
+.input_box {
+
+  width: 165px;
+  height: 19px;
+
+}
+
+.input_box2 {
+
+  width: 353px;
+  height: 19px;
+
+}
+
+/* rating */
+
+form .wrapper {
+
+  transform: translate(-50%, -50%) rotateY(180deg);
+  margin: 0;
+  padding: 0;
+  padding-left: 310px;
+  display: flex;
+}
+
+form .wrapper input {
+  display: none;
+
+}
+
+form .wrapper label {
+  display: block;
+  cursor: pointer;
+  width: 40px;
+
+}
+
+.wrapper label:before {
+  content: '★';
+  position: relative;
+  display: block;
+  font-size: 40px;
+  color: rgb(106, 106, 106);
+}
+
+.wrapper label:after {
+  content: '★';
+  position: absolute;
+  display: block;
+  font-size: 40px;
+  color: orange;
+  top: 0;
+  opacity: 0;
+  transition: .6s;
+}
+
+.wrapper label:hover:after,
+.wrapper label:hover~label:after,
+.wrapper input:checked~label:after {
+  opacity: 1;
+}
+
+@media screen and (max-width:1400px) {
+
+  .container {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
