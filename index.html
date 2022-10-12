@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="primary">
+      <div class="secondary">
+        <div class="container1">
+          <form>
+            <label for="name"
+              ><b style="font-size: 13.5px">Name</b><span class="star">*</span>
+              <input class="input_box" name="name" type="text" />
+              <span style="font-size: small">First</span>
+            </label>
+            &nbsp; &nbsp;
+
+            <label>
+              <input class="input_box" name="name" type="text" />
+              <span style="font-size: small">Last</span>
+            </label>
+            <br /><br />
+
+            <label for="email"
+              ><b style="font-size: 13.5px">Email</b>
+              <span class="star">*</span> </label
+            ><br />
+            <input class="input_box2" name="email" type="email" /> <br /><br />
+
+            <!-- Rating -->
+            <p>
+              <b style="font-size: 13.5px">Your experience</b>
+              <span class="star">*</span>
+            </p>
+            <div class="wrapper">
+              <input type="radio" name="rate" id="rate5" />
+              <label for="rate5"></label>
+              <input type="radio" name="rate" id="rate4" />
+              <label for="rate4"></label>
+              <input type="radio" name="rate" id="rate3" />
+              <label for="rate3"></label>
+              <input type="radio" name="rate" id="rate2" />
+              <label for="rate2"></label>
+              <input type="radio" name="rate" id="rate1" />
+              <label for="rate1"></label>
+            </div>
+            <br />
+
+            <p>Overall how would you rate your experiance with us?</p>
+
+            <!-- table -->
+            <table
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                border-collapse: collapse;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td class="table_heading">
+                    How satisfied are you with<span class="star">*</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="rdo">very unsatisfied</td>
+                  <td class="rdo">unsatisfied</td>
+                  <td class="rdo">normal</td>
+                  <td class="rdo">satisfied</td>
+                  <td class="rdo">very satisfied</td>
+                </tr>
+
+                <tr class="tr">
+                  <td>Purchase</td>
+                  <td class="rdo"><input type="radio" name="Purchase" /></td>
+                  <td class="rdo"><input type="radio" name="Purchase" /></td>
+                  <td class="rdo"><input type="radio" name="Purchase" /></td>
+                  <td class="rdo"><input type="radio" name="Purchase" /></td>
+                  <td class="rdo"><input type="radio" name="Purchase" /></td>
+                </tr>
+
+                <tr>
+                  <td>service</td>
+                  <td class="rdo"><input type="radio" name="service" /></td>
+                  <td class="rdo"><input type="radio" name="service" /></td>
+                  <td class="rdo"><input type="radio" name="service" /></td>
+                  <td class="rdo"><input type="radio" name="service" /></td>
+                  <td class="rdo"><input type="radio" name="service" /></td>
+                </tr>
+
+                <tr class="tr">
+                  <td>company overall</td>
+                  <td class="rdo"><input type="radio" name="overall" /></td>
+                  <td class="rdo"><input type="radio" name="overall" /></td>
+                  <td class="rdo"><input type="radio" name="overall" /></td>
+                  <td class="rdo"><input type="radio" name="overall" /></td>
+                  <td class="rdo"><input type="radio" name="overall" /></td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+
+            <table
+              style="
+                font-family: 'Times New Roman', Times, serif;
+                border-collapse: collapse;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td class="table_heading">
+                    How likely are you to<span class="star">*</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="rdo">very unlikely</td>
+                  <td class="rdo">unlikely</td>
+                  <td class="rdo">normal</td>
+                  <td class="rdo">likely</td>
+                  <td class="rdo">very likely</td>
+                </tr>
+
+                <tr class="tr">
+                  <td>Buy from us again</td>
+                  <td class="rdo"><input type="radio" name="buy" /></td>
+                  <td class="rdo"><input type="radio" name="buy" /></td>
+                  <td class="rdo"><input type="radio" name="buy" /></td>
+                  <td class="rdo"><input type="radio" name="buy" /></td>
+                  <td class="rdo"><input type="radio" name="buy" /></td>
+                </tr>
+
+                <tr>
+                  <td>Recommend our<br />product to others</td>
+                  <td class="rdo"><input type="radio" name="product" /></td>
+                  <td class="rdo"><input type="radio" name="product" /></td>
+                  <td class="rdo"><input type="radio" name="product" /></td>
+                  <td class="rdo"><input type="radio" name="product" /></td>
+                  <td class="rdo"><input type="radio" name="product" /></td>
+                </tr>
+
+                <tr class="tr">
+                  <td>Recommend our<br />company to others</td>
+                  <td class="rdo"><input type="radio" name="Recommend" /></td>
+                  <td class="rdo"><input type="radio" name="Recommend" /></td>
+                  <td class="rdo"><input type="radio" name="Recommend" /></td>
+                  <td class="rdo"><input type="radio" name="Recommend" /></td>
+                  <td class="rdo"><input type="radio" name="Recommend" /></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p style="font-weight: bold">Additional comments or suggestions</p>
+            <textarea name="comment"></textarea>
+            <br />
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
